@@ -1,0 +1,21 @@
+extends ../layout
+
+block content
+    h1 Book Room
+    form(action="/rooms/add",method="post")
+        .form-group
+            label(for="name") Name
+            input(type="Text", class="form-control", name="name")
+        .form-group
+            label(for="persons") Total Person(s)
+            input(type="number", class="form-control", name="persons")
+        .form-group
+            label(for="stay") Days of Stay
+            input(type="Number", class="form-control", name="stay")
+        .form-group
+            label(for="location") Location
+            input(type="Text", class="form-control", name="location")
+            
+        input(type="submit", class="btn btn-info")
+
+    

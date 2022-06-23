@@ -1,0 +1,92 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+*{
+    margin: auto;
+    padding: auto;
+
+}
+#ab1{
+    text-align:center;
+    color: gray;
+    font-weight: bold;
+
+}
+#ab2{
+    text-align:center;
+    color: gray;
+    font-weight: bold;
+}
+#abli{
+    text-align:center;
+    list-style-type: none;
+}
+p{
+    color: rgb(0, 0, 0);
+
+}
+#foot{
+    display: flex;
+    background-color: rgb(131, 131, 131);
+    padding: 1rem;
+}
+
+#f1 li{
+    text-align: center;
+    list-style: none;
+
+}
+#f1 li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+#f1 li a:hover{
+    color: rgb(255, 0, 0);
+    font-size:  17px;
+    text-transform:uppercase;
+    border: 1px solid transparent;
+    padding: 0px 8px;
+    border-radius: 2px;
+    text-decoration: none;
+    list-style-type: none;
+    transition: .5s;
+}
+
+#f2 li{
+    text-align: center;
+    list-style: none;
+
+}
+#f2 li a{
+    text-decoration: none;
+    color: black;
+}
+#f2 li a:hover{
+    color: rgb(255, 0, 0);
+    font-size:  12px;
+    text-transform:uppercase;
+    border: 1px solid transparent;
+    padding: 0px 8px;
+    border-radius: 2px;
+    text-decoration: none;
+    list-style-type: none;
+    transition: .5s;
+}
+#f3{
+    text-align: center;
+    background-color: rgb(131, 131, 131);
+    padding: 1rem;
+    width: 102.7%;
+
+}
+.btn#btn1{
+    height: 5%;
+    width: 30%;
+    margin-left: 19%;
+}

@@ -1,0 +1,87 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  .container
+    #myCarousel.carousel.slide(data-ride='carousel')
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#myCarousel' data-slide-to='0')
+        li(data-target='#myCarousel' data-slide-to='1')
+        li(data-target='#myCarousel' data-slide-to='2')
+        li(data-target='#myCarousel' data-slide-to='3')
+      // Wrapper for slides
+      .carousel-inner
+        .item.active
+          img(src='./images/1.jpg' alt='Be{LONG} To Rankapur' style='width:130%;')
+        .item
+          img(src='./images/2.jpg' alt='Be{LONG} To Rankapur' style='width:130%;')
+        .item
+          img(src='./images/3.jpg' alt='Be{LONG} To Rankapur' style='width:130%;')
+        .item
+          img(src='./images/4.jpg' alt='Be{LONG} To Rankapur' style='width:130%;')
+      // Left and right controls
+      a.left.carousel-control(href='#myCarousel' data-slide='prev')
+        span.glyphicon.glyphicon-chevron-left
+        span.sr-only Previous
+      a.right.carousel-control(href='#myCarousel' data-slide='next')
+        span.glyphicon.glyphicon-chevron-right
+        span.sr-only Next
+
+
+  br
+  br
+
+  .container-fluid
+  .row
+    .col-xl-4.col-lg-4.col-md-4
+      img.img-fluid(src='./images/about.jpg' alt='responsive webite')
+    .col-xl-4.col-lg-4.col-md-4
+      img.img-fluid(src='./images/swim.jpg' alt='responsive webite')
+    .col-xl-4.col-lg-4.col-md-4
+      br
+      br
+      h2 Best Resort in Ranakpur
+      br
+      p
+        | Located in the picturesque valley of the Aravallis, Mana Hotels offers affordable luxury just 5 km from the mesmerizing Ranakpur Jain Temple and 50 km from the majestic Kumbhalgarh Fort.
+  br
+  .container-fluid
+  .row
+    .col-xl-4.col-lg-4.col-md-4
+      br
+      br
+      h2 Deluxe Rooms at the Best Hotel in Ranakpur
+      br
+      p
+        | Rooms, Suite&apos;s &amp; Villa&apos;s make up a 49 key inventory of centrally air conditioned rooms with all other creature comforts to pamper you during your stay at Mana Ranakpur
+    .col-xl-4.col-lg-4.col-md-4
+      img.img-fluid(src='./images/rooms.jpg' alt='responsive webite')
+    .col-xl-4.col-lg-4.col-md-4
+      img.img-fluid(src='./images/room2.jpg' alt='responsive webite')
+  br
+  br
+  .container-fluid
+  .row
+    h2(style={padding: '1rem'}) Ranakpur
+    .col-xl-12.col-lg-12.col-md-12
+      p
+        | Ranakpur offers the perfect getaway from the exhaustive city life&apos;s of traveller&apos;s coming from Ahmedabad, Jaipur, Delhi &amp; Mumbai. Choose from a wide variety of experiences such as wildlife safari&apos;s, historical fort visits, temple visits, jungle treks, indigenous crafts exploration and more. Add these experiences to your travel plan to make your holiday a memorable one.
+    span.col-xl-6.col-lg-6.col-md-6
+      img.img-fluid.mb-2(src='./images/5.jpg' alt='responsive webite')
+      img.img-fluid.mt-3.mb-2(src='./images/7.jpg' alt='responsive webite')
+      img.img-fluid.mt-3.mb-2(src='./images/9.jpg' alt='responsive webite')
+    span.col-xl-6.col-lg-6.col-md-6
+      img.img-fluid.mb-2(src='./images/6.jpg' alt='responsive webite')
+      img.img-fluid.mt-3.mb-2(src='./images/8.jpg' alt='responsive webite')
+      img.img-fluid.mt-3.mb-2(src='./images/10.jpg' alt='responsive webite')
+    br
+    br
+    h2(style={padding: '1rem'}) Reviews and Ratings of Mana Hotels
+    .col-xl-12.col-lg-12.col-md-12
+    
+    
+    p Mana Hotels in Ranakpur has been awarded with several traveller awards over the years. The most prestigious of these has been the Traveller&apos;s Choice Award given by Trip Advisor which Mana Hotels has won for 9 years in a row. These accolades make Mana Ranakpur one of the best resorts in Rajasthan.
+    br  
+  include ./foot

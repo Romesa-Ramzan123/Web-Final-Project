@@ -1,0 +1,14 @@
+extends ../layout
+
+block content
+  h1 Login
+  h3 Login please
+  br
+  form(action="/login",method="post")        
+        .form-group
+            label(for="email") Email
+            input#email(type="text", class="form-control", name="email" required)
+        .form-group
+            label(for="password") Password
+            input(type="password", class="form-control", name="password" required)
+        input(type="submit", class="btn btn-info" value="Login")

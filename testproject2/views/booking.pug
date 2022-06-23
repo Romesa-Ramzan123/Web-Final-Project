@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1 Your Booking
+  - var total=0;
+    table.table
+      thead
+        th Name
+        th Person(s)
+        th Stay(Days)
+        th Location
+        th Actions
+      tbody
+        each item in booking
+          
+          tr
+            td=item.name
+            td=item.persons
+            td=item.stay
+            td=item.location
+            td
+              a(href="/rooms/booking/remove/"+item._id, class="btn btn-danger") Remove Booking            
+      
+ 
+  

@@ -1,0 +1,29 @@
+extends ../layout
+
+block content
+    .row
+        .col-sm-8
+            h1=title
+        .col-sm-4
+            a(href="/rooms/add", class="btn btn-success float-right") Book Rooms
+    table.table
+        thead
+            tr
+                th Name
+                th Persons
+                th Stay
+                th Location
+                th Actions
+        tbody
+            each room in rooms
+                tr
+                    td=room.name
+                    td=room.persons
+                    td=room.stay
+                    td=room.location
+                    td
+                        if user 
+                            a(href="/rooms/booking/"+room._id, class="btn btn-info") Add To booking
+                            br
+                            a(href="/rooms/edit/"+room._id, class="btn btn-warning") Edit
+                            a(href="/rooms/delete/"+room._id, class="btn btn-danger") Delete

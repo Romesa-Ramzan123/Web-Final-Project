@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  h1 Admin Login
+  form(action="/adminlogin",method="post")        
+        .form-group
+            label(for="email") Email
+            input#email(type="text", class="form-control", name="email" value="abd@gmail.com")
+        .form-group
+            label(for="password") Password
+            input(type="password", class="form-control", name="password" value="abd" required)
+        input(type="submit", class="btn btn-info" value="Login" )

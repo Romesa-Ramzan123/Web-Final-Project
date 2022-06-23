@@ -1,0 +1,41 @@
+extends layout
+
+
+block content
+    .container-fluid
+        .row
+            h2.text Excursions
+            p Ranakpur offers the perfect getaway from the exhaustive city life&apos;s of traveller&apos;s coming from Ahmedabad, Jaipur, Delhi &amp; Mumbai. Choose from a wide variety of experiences such as wildlife safari&apos;s, historical fort visits, temple visits, jungle treks, indigenous crafts exploration and more. Add these experiences to your travel plan to make your holiday a memorable one.
+
+    
+        .col-xl-12.col-lg-12.col-md-12
+            span.col-xl-6.col-lg-6.col-md-6
+                div
+                    img.img-fluid.ml-5.mb-2(src='./images/11.jpg' alt='Ranakpur Jain Temple')
+                    button#btn1.btn.btn-dark.text-light(type='button')
+                        a.exp(href='/ranakpur') Ranakpur Jain Temple
+                div
+                    img.img-fluid.ml-5.mt-3.mb-2(src='./images/12.jpg' alt='SUN Temple')
+                    button#btn1.btn.btn-dark.text-light(type='button')
+                        a.exp(href='/sun') SUN Temple
+                div
+                    img.img-fluid.ml-5.mt-3.mb-2(src='./images/13.jpg' alt='Golden Temple')
+                    button#btn1.btn.btn-dark.text-light(type='button')
+                        a.exp(href='/golden') Golden Temple
+            span.col-xl-6.col-lg-6.col-md-6
+                div
+                    img.img-fluid.mb-2(src='./images/14.jpg' alt='Heritage Train' text='Heritage Train')
+                    button#btn1.btn.btn-dark.text-light(type='button')
+                        a.exp(href='/heritage') Heritage Train
+                div
+                    img.img-fluid.mt-3.mb-2(src='./images/15.jpg' alt='Unseen Rajahstan' text='Unseen Rajahstan')
+                    button#btn1.btn.btn-dark.text-light(type='button')
+                        a.exp(href='/unseen') Unseen Rajahstan
+                div
+                    img.img-fluid.mt-3.mb-2(src='./images/16.jpg' alt='Camel Charisma' text='Camel Charisma')
+                    button#btn1.btn.btn-dark.text-light(type='button')
+                        a.exp(href='/camel') Camel Charisma
+    br
+    br
+    br                    
+    include ./foot                    
